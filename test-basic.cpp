@@ -72,13 +72,6 @@ int main()
         }
     }
 
-    // Explicitly deleted or defaulted functions
-    {
-        // MyClass mc1; // Not allowed as default constructor is deleted. 
-        // MyClass mc2(mc1); // Not allowed as copy constructor is deleted
-        // mc1 = MyClass(); // Now allowed as assignment operator is deleted
-    }
-
     // Using Factory method to create singleton
     {
         // MyClass& mc = MyClass::Create();
