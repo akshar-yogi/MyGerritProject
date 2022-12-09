@@ -75,7 +75,7 @@ int main()
     // Using Factory method to create singleton
     {
         MyClass& mc = MyClass::Create();
-        std::cout << mc.Id() << "\n";
+        std::cout << "ID for the created singleton is " << mc.Id() << "\n";
     }
 
     return (0);
