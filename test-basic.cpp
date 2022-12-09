@@ -37,6 +37,7 @@ public:
     }
     void Id(const std::string& id) override
     {
+        std::cout << id << ">>>>>>>>>> \n";
         _id = id;
     }
     bool operator==(const MyClass& other) const { // Operator overloading
