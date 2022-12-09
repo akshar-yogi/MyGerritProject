@@ -19,11 +19,11 @@ struct IMyInterface {
 // Derived class using virtial inheritance and public member access specifier
 class MyClass : public virtual IMyInterface {
 private:
-    MyClass() = delete; // Explicitly deleted constructor
     MyClass(const MyClass&) = delete; // Deleted copy constructor
     MyClass& operator=(const MyClass&) = delete; // Deleted assignment operator
 
 public:
+    MyClass() = default;
     explicit MyClass(const std::string& id)
         : _id(id)
     {
