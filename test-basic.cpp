@@ -27,6 +27,7 @@ public:
     explicit MyClass(const std::string& id)
         : _id(id)
     {
+        std::cout << "I am in MyClass constructor\n";
     }
     ~MyClass() override = default;
 
