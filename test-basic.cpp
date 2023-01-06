@@ -40,6 +40,7 @@ public:
         _id = id;
     }
     bool operator==(const MyClass& other) const { // Operator overloading
+        std::cout << "I am in operator overloading function" << "\n";
         if (strcasecmp(Id().c_str(), other.Id().c_str()) == 0) { // compare ignoring case
             return true;
         } else {
@@ -49,6 +50,8 @@ public:
     // Factory method to create singleton
     static MyClass& Create()
     {
+        std::cout << "I am in factory method" << "\n";
+
         static MyClass instance("DefaultString");
         return instance;
     }
