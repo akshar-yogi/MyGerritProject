@@ -49,6 +49,8 @@ public:
     // Factory method to create singleton
     static MyClass& Create()
     {
+        std::cout << "I am in factory method" << "\n";
+
         static MyClass instance("DefaultString");
         return instance;
     }
